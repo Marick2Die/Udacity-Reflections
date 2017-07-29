@@ -15,3 +15,49 @@ version contorl, you can save space without creating more directories on your sy
 server.
 
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+The staging area can be compared to the working directory and most recent commit by using
+the git diff command. By comparing the files before they are commited, you can ensure
+that you are only commiting one logical change per commit. If multiple changes have been
+made, you can commit more than once with the appropriate logical changes.
+
+
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+
+Branches are used to add or edit different features of the master branch without changing
+the working version of the game. Only using the master branch for stable releases allows
+experimentation on other branches without the risk of breaking something. And branches
+can be merged and deleted as necessary, so this is helpful for organization and 
+experimentation.
+
+
+How do the diagrams help you visualize the branch structure?
+
+Some people learn better through visual representation, so the diagrams assist in 
+explainging a parent-child structure through branches and commit nodes. Being able to 
+see the connections between commits and branches through their parent nodes helps to 
+explain that some commits become unreachable if they are not in their own dedicated 
+branch.
+
+
+What is the result of merging two branches together? Why do we represent it in the 
+diagram the way we do?
+
+I had problems merging my files due to a typo in the master file. I was able to 
+successfully merge them, but the game was broken. So after devling in to the forums and 
+finding out where the typo was, I was able to comment out the necessary text and the 
+game was able to run. It is represented in the diagram as having two parents because 
+both commit logs will show up in the new merged master branch. Knowing that you can 
+access the files as they were before they were merged is useful for debugging.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging saves time and makes the logical thinking easier, but leaves room for 
+potential bugs and typos that are unexpected. Manually merging requires more fine-tuning
+but may also be difficult to figure out what is wrong. However, the extra time may be
+necessary to ensure that the merged version operates appropriately and compiles.
+
+
