@@ -1,1 +1,7 @@
-.
+When would you want to use a remote repository rather than keeping all your work local?
+
+I would imagine that the primary two purposes for using a remote repository is that it is
+public, so others can read and contribute to your project, and also that it is backed up
+so it can be accessed from multiple computers.
+
+
